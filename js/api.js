@@ -55,7 +55,7 @@ const cardDetail = (id) => {
     fetch(`https://openapi.programming-hero.com/api/phone/${id}`)
         .then(response => response.json())
         .then(data => setDetails(data))
-    window.scrollTo(0, 1000);
+    window.scrollTo(0, 0);
 }
 
 const setDetails = (phone) => {
