@@ -43,8 +43,8 @@ const cardDisplay = (cards) => {
             <div class="card">
             <img src="${card.image}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Name: ${card.phone_name}</h5>
-                <h6 class="card-text"><span>Brand:</span> ${card.brand}</h6>
+                <h5 class="card-title">Name : ${card.phone_name}</h5>
+                <h6 class="card-text"><span>Brand :</span> ${card.brand}</h6>
                 <button onclick="cardDetail('${card.slug}')"  class="btn btn-primary">Details</button>
                
             </div>
@@ -76,24 +76,24 @@ const setDetails = (phone) => {
            <img src="${phone.image}" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Name: ${phone.name}</h5>
+            <h5 class="card-title">Name : ${phone.name}</h5>
             <br>
-            <h6 class="card-text"><span>Release-Date:</span> ${phone.releaseDate ? phone.releaseDate : 'No release date found'}</h6>
+            <h6 class="card-text"><span>Release-Date :</span> ${phone.releaseDate ? phone.releaseDate : 'No release date found'}</h6>
             <br>
-            <h6 class="card-text"><span>ChipSet:</span> ${phone.mainFeatures.chipSet}</h6>
-            <h6 class="card-text"><span>Display-Size:</span> ${phone.mainFeatures.displaySize}</h6>
-            <h6 class="card-text"><span>Memory:</span> ${phone.mainFeatures.memory}</h6>
-            <h6 class="card-text"><span>Storage:</span> ${phone.mainFeatures.storage}</h6>
+            <h6 class="card-text"><span>ChipSet :</span> ${phone.mainFeatures.chipSet}</h6>
+            <h6 class="card-text"><span>Display-Size :</span> ${phone.mainFeatures.displaySize}</h6>
+            <h6 class="card-text"><span>Memory :</span> ${phone.mainFeatures.memory}</h6>
+            <h6 class="card-text"><span>Storage :</span> ${phone.mainFeatures.storage}</h6>
             <br>
-            <h6 class="card-text"><span>Sensors:</span> ${phone.mainFeatures.sensors.join()}</h6>
+            <h6 class="card-text"><span>Sensors :</span> ${phone.mainFeatures.sensors.join()}</h6>
             <br>
-            <h6 class="card-text"><span>Others:</span>
-            ${phone.others ? `<h6 class="card-text"><span>WLAN:</span> ${phone.others.WLAN} </h6>
-                              <h6 class="card-text"><span>Blutooth:</span> ${phone.others.Bluetooth} </h6>
-                              <h6 class="card-text"><span>GPS:</span> ${phone.others.GPS} </h6> 
-                              <h6 class="card-text"><span>NFC:</span> ${phone.others.NFC} </h6> 
-                              <h6 class="card-text"><span>Radio:</span> ${phone.others.Radio} </h6>
-                        <h6 class="card-text"><span>USB:</span> ${phone.others.USB} </h6> ` : "Others not avialable"}</h6>
+            <h6 class="card-text"><span>Others :</span>
+            ${phone.others ? `<h6 class="card-text"><span>WLAN :</span> ${phone.others.WLAN} </h6>
+                              <h6 class="card-text"><span>Blutooth :</span> ${phone.others.Bluetooth} </h6>
+                              <h6 class="card-text"><span>GPS :</span> ${phone.others.GPS} </h6> 
+                              <h6 class="card-text"><span>NFC :</span> ${phone.others.NFC} </h6> 
+                              <h6 class="card-text"><span>Radio :</span> ${phone.others.Radio} </h6>
+                        <h6 class="card-text"><span>USB :</span> ${phone.others.USB} </h6> ` : "Others not avialable"}</h6>
         </div>
        
         `;
