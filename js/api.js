@@ -14,7 +14,6 @@ const searchPhone = () => {
     // spinner display 
     toggleSpinner('block');
 
-
     fetch(`https://openapi.programming-hero.com/api/phones?search=${inputValue}`)
         .then(response => response.json())
         .then(data => cardDisplay(data))
@@ -27,7 +26,6 @@ const cardDisplay = (cards) => {
     if (!cards.status) {
         document.getElementById('phone-not-found').innerText = 'No phone found';
         toggleSpinner('none');
-
     }
     else {
         document.getElementById('phone-not-found').innerText = '';
@@ -55,9 +53,7 @@ const cardDisplay = (cards) => {
             main.appendChild(div);
         }
         toggleSpinner('none');
-
     }
-
 }
 
 const cardDetail = (id) => {
@@ -75,8 +71,7 @@ const setDetails = (phone) => {
     //console.log(phone);
     const div = document.createElement('div');
     div.classList.add('card');
-    div.innerHTML = `
-        
+    div.innerHTML = `      
         <div class="w-50 mx-auto">
            <img src="${phone.image}" class="card-img-top" alt="...">
         </div>
