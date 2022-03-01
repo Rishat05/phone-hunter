@@ -62,8 +62,10 @@ const setDetails = (phone) => {
 
     document.getElementById('detail-show').innerHTML = '';
     phone = phone.data;
+    console.log(phone);
     const div = document.createElement('div');
     div.classList.add('card');
+    div.classList.add('me-2');
 
     div.innerHTML = `
         
